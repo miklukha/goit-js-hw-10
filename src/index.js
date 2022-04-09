@@ -10,7 +10,6 @@ const debounce = require('lodash.debounce');
 const DEBOUNCE_DELAY = 300;
 
 const refs = getRefs();
-
 refs.input.addEventListener('input', debounce(onFillInput, DEBOUNCE_DELAY));
 
 function onFillInput(e) {
